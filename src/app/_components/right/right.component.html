@@ -1,0 +1,20 @@
+<div fxLayout="column" class="container" *ngIf="selectedImage">
+  <div>
+    <img src="{{selectedImage.Image}}" class="image">
+  </div>
+  <div>
+    <div class="bottomSheet" fxLayout="row" style="width: 100%;">
+      <button mat-raised-button (click)="like()">
+        {{likes}}
+      </button>
+
+      <button mat-raised-button (click)="like()">
+        <mat-icon>thumb_up</mat-icon>
+      </button>
+      <button mat-raised-button style="float: right;">
+        <mat-icon>schedule</mat-icon> {{selectedImage.timestamp | date:'medium'}}
+      </button>
+    </div>
+  </div>
+
+</div>

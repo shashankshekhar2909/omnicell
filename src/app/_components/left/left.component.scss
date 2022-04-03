@@ -1,0 +1,16 @@
+.card{
+  border: 2px solid #fff;
+  padding: 10px;
+  cursor: pointer;
+  .image{
+    width: 100%;
+  }
+}
+.card:hover{
+  border: 2px solid lightgray;
+  background-color: beige;
+}
+.active{
+  background-color: beige;
+  border: 2px solid lightgray;
+}
